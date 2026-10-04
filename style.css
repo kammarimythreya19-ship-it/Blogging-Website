@@ -1,0 +1,498 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8f7f3;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* ================= NAVBAR ================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #f8f7f3;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #e4572e;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #e4572e;
+}
+
+.menu-btn {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    max-width: 1200px;
+    min-height: 650px;
+    margin: auto;
+    padding: 80px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.welcome {
+    color: #e4572e;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 70px;
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #e4572e;
+}
+
+.description {
+    color: #666;
+    font-size: 18px;
+    max-width: 550px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 25px;
+    background: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e4572e;
+}
+
+
+/* ================= HERO BOX ================= */
+
+.hero-box {
+    width: 350px;
+    height: 350px;
+
+    background: #e4572e;
+    color: white;
+
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    transform: rotate(3deg);
+
+    box-shadow: 15px 15px 0 #222;
+}
+
+.pen {
+    font-size: 80px;
+    margin-bottom: 15px;
+}
+
+.hero-box h2 {
+    font-size: 28px;
+}
+
+.hero-box p {
+    margin-top: 10px;
+}
+
+
+/* ================= BLOGS ================= */
+
+.blogs {
+    background: white;
+    padding: 90px 20px;
+}
+
+.heading {
+    max-width: 1200px;
+    margin: auto auto 45px;
+}
+
+.heading h2 {
+    font-size: 45px;
+}
+
+.blog-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.blog-card {
+    background: #f8f7f3;
+    border-radius: 12px;
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+.blog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* BLOG IMAGE */
+
+.blog-picture {
+    height: 210px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 80px;
+}
+
+.technology {
+    background: #dce9ff;
+}
+
+.education {
+    background: #ffe4d6;
+}
+
+.lifestyle {
+    background: #dff4e5;
+}
+
+
+/* BLOG CONTENT */
+
+.blog-content {
+    padding: 25px;
+}
+
+.blog-content > span {
+    color: #e4572e;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.blog-content h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.blog-content p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.blog-content button {
+    border: none;
+    background: none;
+
+    color: #e4572e;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+    max-width: 1000px;
+    margin: auto;
+
+    padding: 100px 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+}
+
+.about-title h2 {
+    font-size: 45px;
+    line-height: 1.2;
+}
+
+.about-text {
+    color: #666;
+    font-size: 18px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+.about-text strong {
+    color: #222;
+}
+
+
+/* ================= NEWSLETTER ================= */
+
+.newsletter {
+    background: #222;
+    color: white;
+
+    text-align: center;
+
+    padding: 80px 20px;
+}
+
+.newsletter h2 {
+    font-size: 45px;
+}
+
+.newsletter p {
+    color: #bbb;
+    margin: 10px 0 25px;
+}
+
+.newsletter form {
+    max-width: 500px;
+    margin: auto;
+
+    display: flex;
+}
+
+.newsletter input {
+    flex: 1;
+
+    padding: 15px;
+
+    border: none;
+    outline: none;
+
+    font-size: 15px;
+}
+
+.newsletter button {
+    padding: 15px 25px;
+
+    border: none;
+
+    background: #e4572e;
+    color: white;
+
+    cursor: pointer;
+}
+
+#message {
+    color: #e4572e;
+    font-weight: bold;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.contact h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    color: #666;
+}
+
+.contact-btn {
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 14px 25px;
+
+    background: #222;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+}
+
+.contact-btn:hover {
+    background: #e4572e;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 40px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 1px solid #ddd;
+}
+
+footer p {
+    color: #777;
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+}
+
+.socials a {
+    color: #333;
+    text-decoration: none;
+}
+
+.socials a:hover {
+    color: #e4572e;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    .nav-links {
+        display: none;
+
+        position: absolute;
+
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+
+        background: #f8f7f3;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+
+        padding-top: 60px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero-box {
+        width: 280px;
+        height: 280px;
+    }
+
+    .blog-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .about-title h2 {
+        font-size: 38px;
+    }
+
+    .newsletter form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+
+        text-align: center;
+    }
+}
