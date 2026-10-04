@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kammari Mythreya | My Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Mythreya<span>.</span></div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <p class="welcome">WELCOME TO MY BLOG</p>
+
+            <h1>
+                Hi, I'm<br>
+                <span>Kammari Mythreya</span>
+            </h1>
+
+            <p class="description">
+                Welcome to my personal blog where I share my thoughts,
+                ideas, experiences, technology and things that inspire me.
+            </p>
+
+            <a href="#blogs" class="btn">Read My Blogs →</a>
+        </div>
+
+        <div class="hero-box">
+            <div class="pen">✍️</div>
+            <h2>Write. Learn. Inspire.</h2>
+            <p>Sharing ideas one blog at a time.</p>
+        </div>
+    </section>
+
+    <!-- Blogs -->
+    <section class="blogs" id="blogs">
+        <div class="heading">
+            <div>
+                <p class="welcome">MY LATEST WORK</p>
+                <h2>Featured Blogs</h2>
+            </div>
+        </div>
+
+        <div class="blog-container">
+
+            <article class="blog-card">
+                <div class="blog-picture technology">
+                    💻
+                </div>
+
+                <div class="blog-content">
+                    <span>TECHNOLOGY</span>
+                    <h3>The Future of Technology</h3>
+
+                    <p>
+                        Technology is changing our world every day.
+                        Let's explore some exciting developments.
+                    </p>
+
+                    <button onclick="readBlog('Technology')">
+                        Read More →
+                    </button>
+                </div>
+            </article>
+
+
+            <article class="blog-card">
+                <div class="blog-picture education">
+                    📚
+                </div>
+
+                <div class="blog-content">
+                    <span>EDUCATION</span>
+                    <h3>Why Learning Matters</h3>
+
+                    <p>
+                        Learning new things helps us grow,
+                        develop new skills and understand the world.
+                    </p>
+
+                    <button onclick="readBlog('Education')">
+                        Read More →
+                    </button>
+                </div>
+            </article>
+
+
+            <article class="blog-card">
+                <div class="blog-picture lifestyle">
+                    🌱
+                </div>
+
+                <div class="blog-content">
+                    <span>LIFESTYLE</span>
+                    <h3>Small Things, Big Changes</h3>
+
+                    <p>
+                        Small positive habits can make a meaningful
+                        difference in our everyday lives.
+                    </p>
+
+                    <button onclick="readBlog('Lifestyle')">
+                        Read More →
+                    </button>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+
+        <div class="about-title">
+            <p class="welcome">ABOUT ME</p>
+            <h2>Meet<br>Kammari Mythreya</h2>
+        </div>
+
+        <div class="about-text">
+            <p>
+                Hello! I'm <strong>Kammari Mythreya</strong>.
+                This is my personal blogging website.
+            </p>
+
+            <p>
+                I created this website to share my thoughts,
+                knowledge, experiences and interesting ideas.
+                I believe that every idea has a story behind it.
+            </p>
+
+            <p>
+                Through this blog, I hope to learn new things,
+                express myself and inspire others.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+
+        <h2>Stay Connected</h2>
+
+        <p>
+            Subscribe to receive my latest blog updates.
+        </p>
+
+        <form onsubmit="subscribe(event)">
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <button type="submit">
+                Subscribe
+            </button>
+        </form>
+
+        <p id="message"></p>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+
+        <p class="welcome">GET IN TOUCH</p>
+
+        <h2>Let's Connect</h2>
+
+        <p>
+            Thank you for visiting my blog!
+        </p>
+
+        <a href="mailto:mythreya@example.com" class="contact-btn">
+            Contact Me
+        </a>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="logo">
+            Mythreya<span>.</span>
+        </div>
+
+        <p>
+            © 2026 Kammari Mythreya. All Rights Reserved.
+        </p>
+
+        <div class="socials">
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
